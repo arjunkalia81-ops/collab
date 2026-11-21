@@ -1,0 +1,44 @@
+# Secrets and credentials — never commit
+.env
+.env.*
+!.env.example
+therapynotes.txt
+secrets.env
+*.pem
+*.key
+veroehr.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Worker runtime / browser state
+worker/browser_profile/
+worker/chrome_local_profile/
+worker/chrome_profile/
+worker/clearance.json
+worker/sessions.json
+.playwright-mcp/
+
+# Local junk / logs
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE / editor (keep shared Cursor rules)
+.idea/
+.vscode/
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+
+# Temp / one-off
+_test_*.py
+tn_*.js
+tn_*.json
